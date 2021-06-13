@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HomeWorkTest</string>
+    <string name="sad"></string>
+    <string name="button_name1">1</string>
+    <string name="button_name2">2</string>
+    <string name="button_name3">3</string>
+    <string name="button_multiply">*</string>
+    <string name="button_name4">4</string>
+    <string name="button_name5">5</string>
+    <string name="button_name6">6</string>
+    <string name="button_to_split">/</string>
+    <string name="button_name7">7</string>
+    <string name="button_name8">8</string>
+    <string name="button_name9">9</string>
+    <string name="button_plus">+</string>
+    <string name="button_name0">0</string>
+    <string name="button_name_point">.</string>
+    <string name="button_name_minus">-</string>
+    <string name="button_name_equaly">=</string>
+</resources>
