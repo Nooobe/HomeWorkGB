@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     private AllCounters allCounters;
-    SharedPreferences sPref;
+  //  SharedPreferences sPref;
 
-    String SAVED_TEXT = "saved_text";
+ private   String SAVED_TEXT = "saved_text";
 
 
 
@@ -83,96 +83,71 @@ public class MainActivity extends AppCompatActivity {
     //метод вывода числа
     private void initButton1ClickListener() {
         Button b1 = findViewById(R.id.button1);
-        b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              //  listArr.add((double)allCounters.getNum1());
-                setTextOnTextView1(textView1, allCounters.getNum1());
-            }
+        b1.setOnClickListener(v -> {
+          //  listArr.add((double)allCounters.getNum1());
+            setTextOnTextView1(textView1, allCounters.getNum1());
         });
     }
 
     private void initButton2ClickListener() {
         Button b2 = findViewById(R.id.button2);
 
-        b2.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-              //  listArr.add((double) allCounters.getNum2());
-                setTextOnTextView1(textView1, allCounters.getNum2());
-            }
+        b2.setOnClickListener(v -> {
+          //  listArr.add((double) allCounters.getNum2());
+            setTextOnTextView1(textView1, allCounters.getNum2());
         });
     }
 
     private void initButton3ClickListener() {
         Button b3 = findViewById(R.id.button3);
-        b3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              //  listArr.add((double) allCounters.getNum3());
-                setTextOnTextView1(textView1, allCounters.getNum3());
-            }
+        b3.setOnClickListener(v -> {
+          //  listArr.add((double) allCounters.getNum3());
+            setTextOnTextView1(textView1, allCounters.getNum3());
         });
     }
 
     private void initButton4ClickListener() {
         Button b4 = findViewById(R.id.button4);
-        b4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-             //   listArr.add((double) allCounters.getNum4());
-                setTextOnTextView1(textView1, allCounters.getNum4());
-            }
+        b4.setOnClickListener(v -> {
+         //   listArr.add((double) allCounters.getNum4());
+            setTextOnTextView1(textView1, allCounters.getNum4());
         });
     }
 
 
     private void initButton5ClickListener() {
         Button b5 = findViewById(R.id.button5);
-        b5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // listArr.add((double) allCounters.getNum5());
+        b5.setOnClickListener(v -> {
+           // listArr.add((double) allCounters.getNum5());
 
-                setTextOnTextView1(textView1, allCounters.getNum5());
-            }
+            setTextOnTextView1(textView1, allCounters.getNum5());
         });
     }
 
     private void initButton6ClickListener() {
         Button b6 = findViewById(R.id.button6);
-        b6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // listArr.add((double) allCounters.getNum6());
+        b6.setOnClickListener(v -> {
+           // listArr.add((double) allCounters.getNum6());
 
-                setTextOnTextView1(textView1, allCounters.getNum6());
-            }
+            setTextOnTextView1(textView1, allCounters.getNum6());
         });
     }
 
     private void initButton7ClickListener() {
         Button b7 = findViewById(R.id.button7);
-        b7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // listArr.add((double ) allCounters.getNum7());
+        b7.setOnClickListener(v -> {
+           // listArr.add((double ) allCounters.getNum7());
 
-                setTextOnTextView1(textView1, allCounters.getNum7());
-            }
+            setTextOnTextView1(textView1, allCounters.getNum7());
         });
     }
 
     private void initButton8ClickListener() {
         Button b8 = findViewById(R.id.button8);
-        b8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // listArr.add((double) allCounters.getNum8());
+        b8.setOnClickListener(v -> {
+           // listArr.add((double) allCounters.getNum8());
 
-                setTextOnTextView1(textView1, allCounters.getNum8());
-            }
+            setTextOnTextView1(textView1, allCounters.getNum8());
         });
     }
 
@@ -249,54 +224,39 @@ public class MainActivity extends AppCompatActivity {
 
     private void initButton_split_ClickListener(){
         Button b_spl = findViewById(R.id.button_split);
-        b_spl.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textView1.setText(textView1.getText().toString() + allCounters.getSplit());
-
-            }
-        });
+        b_spl.setOnClickListener(v -> textView1.setText(textView1.getText().toString() + allCounters.getSplit()));
     }
 
     private void initButton_mult_ClickListener(){
         Button b_mult = findViewById(R.id.button_multiply);
-        b_mult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               textView1.setText(textView1.getText().toString() + allCounters.getMultip());
-
-            }
-        });
+        b_mult.setOnClickListener(v -> textView1.setText(textView1.getText().toString() + allCounters.getMultip()));
     }
 
 
     private void initButton_equals_ClickListener(){
         Button b_eq = findViewById(R.id.button_equals);
-        b_eq.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              SAVED_TEXT = textView1.getText().toString();
+        b_eq.setOnClickListener(v -> {
+          SAVED_TEXT = textView1.getText().toString();
 
-              MainArr.add(SAVED_TEXT);
-              textView2.setText(SAVED_TEXT);
-              textView1.setText(" ");
+          MainArr.add(SAVED_TEXT);
+          textView2.setText(SAVED_TEXT);
+          textView1.setText(" ");
 
 
-        //    saveText();
+    //    saveText();
 
 
 
 
-            //textView2.setText(text);
-            }
+        //textView2.setText(text);
         });
     }
-//метод для работы с array listom (Нужно сделать)
 
 
 
 
-    //метод для передачи значений в TextView(Нужно доработать)
+
+
 
       private void setTextOnTextView1(TextView textView1, int counter){
 
@@ -328,9 +288,6 @@ public class MainActivity extends AppCompatActivity {
 //        Toast.makeText(MainActivity.this, "Text loaded", Toast.LENGTH_SHORT).show();
 //    }
 
-    //метод для сохранения данных  при смене расположения экрана(Нужно добавить)
-    //добавить метод для записи данных со строки и операций
-    //придумать метод для создания и расшифровки arraylist
 
 
 
